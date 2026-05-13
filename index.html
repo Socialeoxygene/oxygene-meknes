@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>جمعية أكسجين للحماية الاجتماعية</title>
+  <title>جمعية أوكسيجين للحماية الاجتماعية</title>
   <style>
     body {
       margin: 0;
       background: #ffffff;
       color: #222;
       line-height: 1.8;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Arial, sans-serif;
       direction: rtl;
     }
 
@@ -18,17 +18,20 @@
       background: linear-gradient(135deg, #8c6282, #c62828);
       color: white;
       text-align: center;
-      padding: 20px 30px;
+      padding: 40px 20px;
     }
 
     .header img {
       max-width: 120px;
       margin-bottom: 15px;
+      border-radius: 50%;
+      background: white;
+      padding: 10px;
     }
 
     .header h1 {
-      margin: 5px 0 10px;
-      font-size: 26px;
+      margin: 10px 0 5px;
+      font-size: 28px;
     }
 
     .slogan {
@@ -36,34 +39,118 @@
       font-size: 20px;
       font-weight: bold;
       color: #8c6282;
-      margin: 20px 40px;
+      margin: 30px 20px;
     }
 
-    main {
-      max-width: 800px;
-      margin: 30px auto;
-      padding: 0 20px;
+    .section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
     }
 
-    .section-white {
-      background: #fff;
-      padding: 40px 20px;
+    .section h2 {
+      font-size: 30px;
+      color: #8c6282;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .section h3 {
+      color: #c62828;
+      font-size: 20px;
+      margin-top: 30px;
+    }
+
+    .section ul {
+      text-align: right;
+      display: inline-block;
+      margin: 15px 0;
+    }
+
+    .section li {
+      margin-bottom: 8px;
+    }
+
+    .bg-gray {
+      background: #f8f9fa;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 10px 8px;
+      padding: 14px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-red { background: #ef4444; color: white; }
+    .btn-green { background: #22c55e; color: white; }
+    .btn-whatsapp { background: #25D366; color: white; }
+
+    .btn:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .gallery-item {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .gallery-item img,
+    .gallery-item video {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .gallery-item p {
+      padding: 15px;
+      margin: 0;
+      font-size: 15px;
+      color: #555;
       text-align: center;
     }
 
-    .section-white h2 {
+    .contact {
+      background: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .contact h2 {
       font-size: 28px;
-      color: #8c6282;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .header h1 { font-size: 22px; }
+      .slogan { font-size: 18px; }
+      .section h2 { font-size: 24px; }
     }
   </style>
 </head>
 <body>
 
-  <!-- الجزء العلوي -->
+  <!-- الهيدر -->
   <header class="header">
     <img src="logo.png" alt="شعار الجمعية">
-    <h1>جمعية أكسجين للحماية الاجتماعية</h1>
-    <p>ويسلان، مكناس</p>
+    <h1>جمعية أوكسيجين للحماية الاجتماعية</h1>
+    <p>ويسلان عمالة مكناس</p>
   </header>
 
   <!-- الشعار -->
@@ -72,27 +159,74 @@
   </div>
 
   <!-- من نحن -->
-  <section class="section-white">
-    <h2>من نحن؟</h2>
-    <p>جمعية أكسجين للحماية الاجتماعية هي مبادرة مجتمعية تعمل في مدينة ويسلان بمكناس لمساعدة الأشخاص في وضعية الشارع وإعادة إدماجهم.</p>
+  <section class="section">
+    <h2>من نحن</h2>
+    <p style="text-align:center; max-width:800px; margin:0 auto;">
+      <strong>جمعية أوكسيجين للحماية الاجتماعية</strong> هي جمعية وطنية غير ربحية تأسست وفق الظهير الشريف المنظم للحريات العامة، تعمل بمدينة ويسلان بمكناس لمساعدة الأشخاص في وضعية الشارع وإعادة إدماجهم.
+    </p>
+
+    <h3>رؤيتنا وأهدافنا</h3>
+    <p>نسعى للإسهام في تحقيق التنمية المستدامة من خلال الرعاية الصحية والاجتماعية والحماية للفئات الهشة والمعوزة، وعلى رأسها:</p>
+    <ul>
+      <li>الأشخاص في وضعية تشرد</li>
+      <li>مرضى الأمراض المزمنة والقصور الكلوي</li>
+      <li>المسنين والأمهات العازبات</li>
+      <li>الأطفال المعوزين والأسر في وضعية صعبة</li>
+      <li>السجناء السابقين في طور الإدماج</li>
+    </ul>
+
+    <h3>مجالات عملنا</h3>
+    <p>التكوين والتأطير، الحملات الصحية والاجتماعية، الوساطة الأسرية، القوافل الطبية، وإعادة الإدماج المهني والاجتماعي، بشراكة مع المؤسسات العمومية والفاعلين المدنيين.</p>
+
+    <h3>التزامنا</h3>
+    <p>نلتزم بمبادئ الشفافية واحترام كرامة المستفيدين وحماية معطياتهم الشخصية وفق القانون المغربي.</p>
   </section>
 
-  <!-- كن جزءاً من الحل -->
-  <section style="background:#1e293b; color:white; text-align:center; padding:40px 20px;">
-    <h2 style="font-size:28px; margin-bottom:10px;">كن جزءاً من الحل</h2>
-    <p style="font-size:16px; margin-bottom:25px;">تدخلك اليوم ينقذ حياة و يغير مصير الأسر والأفراد</p>
+  <!-- المعرض -->
+  <section class="section bg-gray">
+    <h2>صور وفيديوهات من الميدان</h2>
+    <p style="text-align:center; color:#666;">لمحات من تدخلاتنا وحملاتنا مع المستفيدين</p>
+    
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="photo1.jpg" alt="حملة ميدانية">
+        <p>حملة توزيع الأغطية شتاء 2025</p>
+      </div>
+      
+      <div class="gallery-item">
+        <video src="video1.mp4" controls></video>
+        <p>شهادة مستفيد بعد الإدماج</p>
+      </div>
+      
+      <div class="gallery-item">
+        <img src="photo2.jpg" alt="قافلة طبية">
+        <p>القافلة الطبية بويسلان</p>
+      </div>
+    </div>
+    
+    <p style="text-align:center; margin-top:30px; color:#888; font-size:14px;">
+      بغيتي تزيد صور وفيديوهات؟ رفعهم فـ GitHub وقل ليا نزيدوهم
+    </p>
+  </section>
 
-    <a href="tel:0661890873" style="display:block; background:#ef4444; color:white; padding:15px; margin:10px auto; width:85%; max-width:400px; border-radius:30px; text-decoration:none; font-size:18px; font-weight:bold;">
-      بلغ عن شخص في الشارع
+  <!-- التواصل -->
+  <section class="contact">
+    <h2>كن جزءاً من الحل</h2>
+    <p style="font-size:16px; margin-bottom:30px;">تدخلك اليوم ينقذ حياة ويغير مصير الأسر والأفراد</p>
+
+    <a href="tel:0661890873" class="btn btn-red">بلغ عن شخص في الشارع</a>
+    <a href="https://wa.me/212661890873" target="_blank" class="btn btn-whatsapp">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="white" style="vertical-align: middle; margin-left: 8px;">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.271.296-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      تواصل عبر واتساب
     </a>
+    <a href="tel:0661890873" class="btn btn-green">ادعم مشاريع الإدماج</a>
 
-    <a href="tel:0661890873" style="display:block; background:#22c55e; color:white; padding:15px; margin:10px auto; width:85%; max-width:400px; border-radius:30px; text-decoration:none; font-size:18px; font-weight:bold;">
-      ادعم مشاريع الإدماج
-    </a>
-
-    <div style="margin-top:25px; font-size:16px; line-height:1.8;">
-      <p>ويسلان، مكناس - المغرب | خط التدخل الاجتماعي:</p>
-      <p>الاجتماعي: <strong>0661890873</strong> متاح 24/24 ساعة</p>
+    <div style="margin-top:40px; font-size:16px; line-height:1.8;">
+      <p>ويسلان عمالة مكناس | خط التدخل الاجتماعي</p>
+      <p><strong>الرقم:</strong> 0661890873 | <strong>متاح 24/24 ساعة</strong></p>
+      <p><strong>البريد الإلكتروني:</strong> <a href="mailto:Socialeoxygene@gmail.com" style="color:#22c55e; text-decoration:none;">Socialeoxygene@gmail.com</a></p>
     </div>
   </section>
 
